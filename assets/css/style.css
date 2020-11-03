@@ -1,0 +1,18 @@
+
+body {padding-top: 36px;background-color: #f2f2f2!important;}
+a {color:#2f5396;}
+.card-text span {color:#2f5396;}
+.card-img-top { padding: 10px; }
+p.card-text{line-height: 20px;}
+.card-body {padding: 0rem 0.6rem 0.8rem;}
+h2.title{font-size: 30px;padding: 0 15px;font-weight: bold;}
+.list-group{background: #ffffff;padding: 5px 15px;}
+.list-group h3{font-size: 20px;font-weight: bold;}
+p.subTitle{text-align: center; margin:0px 45px 5px;border-bottom: 1px solid #ccc;}
+.launchYear ul, .successfulLaunch ul, .successfulLanding ul {padding: 0;text-align: center;margin: 0 8px;}
+.launchYear ul li, .successfulLaunch ul li, .successfulLanding ul li {cursor:pointer;display: inline-block;margin: 6px 20px;padding: 0 12px;border-radius: 4px;background: #c5e09b;}
+.successfulLaunch, .successfulLanding{margin-top: 10px; }
+.launchYear ul li.active, .launchYear ul li:hover {background: #7cba01;}
+.successfulLaunch ul li.active, .successfulLaunch ul li:hover {background: #7cba01;}
+.successfulLanding ul li.active, .successfulLanding ul li:hover {background: #7cba01;}
+.no-records {position: absolute;top: 50%; bottom: 0; text-align: center;left: 50%;font-size: 24px;color: #f00;}

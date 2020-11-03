@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceX Launch Programs</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script type="text/javascript" src='library/services/api.js'></script>
+  <script >
+    sessionStorage.clear()
+    getCardList();
+</script>
+
+</head>
+
+<body>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row"><h2 class="title">SpaceX Launch Programs</h2></div>
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <div class="list-group">
+          <h3>Filters</h3>
+          <div class="launchYear">
+            <p class="subTitle">Launch Year</p>
+            <ul>
+              <script>
+
+                const years = [2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020]
+                years.forEach((data)=>{
+                  document.write(`<li class="list-group-item" onclick="getCardList(null,null,null,${data})">${data}</li>`)
+                })
+                </script>
+            </ul>
+          </div>
+          <div class="successfulLaunch">
+              <p class="subTitle">Successful Launch</p>
+              <ul>
+                <script>
+                  document.write(`<li class="list-group-item" onclick="getCardList(null,true,null,null)">True</li>`)
+                  document.write(`<li class="list-group-item" onclick="getCardList(null,false,null,null)">False</li>`)
+                </script>
+              </ul>
+            </div>
+            <div class="successfulLanding">
+                <p class="subTitle">Successful Landing</p>
+                <ul>
+                  <script>
+                   document.write(`<li class="list-group-item" onclick="getCardList(null,null,true,null)">True</li>`)
+                    document.write(`<li class="list-group-item" onclick="getCardList(null,null,false,null)">False</li>`)
+                  </script>
+                </ul>
+              </div>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div  class="col-lg-9">
+          <div id="card-list" class="row">
+          </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-3 bg-grey">
+    <div class="container">
+      <p class="m-0 text-center text-black"><b>Developed By:</b> Dalip Kumar</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script type="text/javascript" src='partials/card-list.js'></script>
+
+</body>
+
+</html>
